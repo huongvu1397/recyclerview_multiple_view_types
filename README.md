@@ -4,7 +4,7 @@
 
 Một Recyclerview với nhiều type với dữ liệu fake
   Cài đặt thuộc tính cho RecyclerView
-```
+```kotlin
  var grid = GridLayoutManager(this, 4)
         rcl_view.apply {
             adapter = this@MainActivity.adapter
@@ -25,7 +25,7 @@ Một Recyclerview với nhiều type với dữ liệu fake
 ```
 
   Bên Adapter
-```
+```kotlin
    override fun onCreateViewHolder(parent: ViewGroup, type: Int): RecyclerView.ViewHolder {
         if (type == TYPE_FOOTER) {
             return FooterViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.footer_view, parent, false))
